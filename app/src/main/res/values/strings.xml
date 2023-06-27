@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">hw3_6</string>
+    <string name="now_playing">Now Playing</string>
+    <string name="master_of_puppets">Master of Puppets</string>
+    <string name="metallica">Metallica</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="unknown_album">Неизвестный альбом</string>
+    <string name="unknown_executor">Неизвестный исполнитель</string>
+    <string name="unknown_track">Неизвестный трек</string>
+    <string name="unknown_image_url">https://cdn1.vectorstock.com/i/1000x1000/41/20/music-track-audio-pattern-sound-background-vector-26294120.jpg</string>
+</resources>
