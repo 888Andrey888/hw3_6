@@ -1,5 +1,7 @@
 package com.example.hw3_6
 
+import android.media.AudioAttributes
+import android.media.MediaPlayer
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -9,7 +11,7 @@ import android.widget.Toast
 import com.example.hw3_6.databinding.FragmentTracksBinding
 
 
-class TracksFragment(private val fragmentsBidge: FragmentsBidge) : Fragment(), OnItemClickListener{
+class TracksFragment(private val fragmentsBidge: FragmentsBidge) : Fragment(), OnItemClickListener {
     private lateinit var binding: FragmentTracksBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

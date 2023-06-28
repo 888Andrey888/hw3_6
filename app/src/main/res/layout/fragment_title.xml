@@ -7,12 +7,53 @@
     android:layout_height="match_parent"
     tools:context=".TitleFragment">
 
+    <LinearLayout
+        android:id="@+id/ll_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/btn_player"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/btn_player"
+            android:src="@drawable/ic_previous" />
+
+        <ImageButton
+            android:id="@+id/btn_play_pausa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/btn_player"
+            android:src="@drawable/ic_play" />
+
+        <ImageButton
+            android:id="@+id/btn_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/btn_player"
+            android:src="@drawable/ic_stop" />
+
+        <ImageButton
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/btn_player"
+            android:src="@drawable/ic_next" />
+
+    </LinearLayout>
+
     <ImageView
         android:id="@+id/img_back"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
         android:src="@mipmap/ic_launcher"
-        android:scaleType="fitXY"/>
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/ll_button"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -45,7 +86,7 @@
         android:text="@string/metallica"
         android:textColor="@color/white"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/img_back"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
